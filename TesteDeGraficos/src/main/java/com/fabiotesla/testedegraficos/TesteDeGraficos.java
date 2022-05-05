@@ -1,17 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.fabiotesla.testedegraficos;
 
 /**
  *
  * @author biog4
  */
+import java.awt.Dimension;
+import javax.swing.*;
+
 public class TesteDeGraficos {
 
+    private static void initWindow(){
+        JFrame window = new JFrame("Test");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //Set Main Panel
+        JPanel t = new MainMenu();
+        t.setPreferredSize(new Dimension(200,200));
+        window.add(t);
+        //
+        window.setResizable(false);
+        window.pack();
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
+        //window.removeAll();
+    }
+    
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                initWindow();
+            }
+        });
     }
 }
