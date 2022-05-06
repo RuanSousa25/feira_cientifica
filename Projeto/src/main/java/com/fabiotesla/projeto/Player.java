@@ -40,7 +40,7 @@ public class Player {
             xacc = 1;
         }
     }
-    public void KeyUnPressed(KeyEvent e){
+    public void KeyReleased(KeyEvent e){
         if(e.getKeyCode() == KeyEvent.VK_D || e.getKeyCode() == KeyEvent.VK_A){
             xacc = 0;
         }

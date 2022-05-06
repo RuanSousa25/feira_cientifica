@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.fabiotesla.projeto;
 
 import java.awt.*;
@@ -14,11 +10,13 @@ import javax.swing.*;
  */
 public class Game extends JPanel implements ActionListener, KeyListener{
 
-    public Player player;
     private Timer timer;
+    public Scene CurrectScene;
+    
     
     public Game(){
-        player = new Player();
+        CurrectScene = new Quarto();
+        
         timer = new Timer(25,this);
         timer.start();
     }
@@ -29,9 +27,7 @@ public class Game extends JPanel implements ActionListener, KeyListener{
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         
-        
-        
-        player.Draw(g);
+        if(CurrectScene != null) CurrectScene.Draw(g);
         
         Toolkit.getDefaultToolkit().sync();
     }
@@ -43,18 +39,18 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 
     @Override
     public void keyPressed(KeyEvent e) {
-        player.KeyPressed(e);
+        if(CurrectScene != null) CurrectScene.KeyPressed(e);
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        player.KeyUnPressed(e);
+        if(CurrectScene != null) CurrectScene.KeyReleased(e);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         super.repaint();
-        player.Tick();
+        if(CurrectScene != null) CurrectScene.Tick();
     }
     
 }
