@@ -18,7 +18,6 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 	public double Time;
 	
 	private BufferedImage background;
-	private BufferedImage computer;
 	private BufferedImage point;
 	private Timer timer;
 	
@@ -27,7 +26,6 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 	
 	public Game() {
 		background = FileLoader.LoadImage("Sprites/background.png");
-		computer = FileLoader.LoadImage("Sprites/computer.png");
 		point = FileLoader.LoadImage("Sprites/barlocation.png");
 		
 		Newp();
@@ -42,9 +40,6 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 		g.fillRect(0, 0, getWidth(), getHeight());
 		g.setColor(b);
 		g.drawImage(background,0,0,getWidth(), getHeight(), this);
-		
-		//draw pc
-		g.drawImage(computer,360,200,600,600, this);
 		
 		g.drawLine(360, 170, 360 + 600, 170);
 		g.fillRect(360, 170, 600, 20);
