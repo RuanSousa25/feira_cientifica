@@ -8,14 +8,15 @@ import javax.swing.*;
 public class Main {
 	
 	public static JFrame frame;
-	
 	public static void main(String[] args) {
+		frame = new JFrame("Game");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		ChangeScene(new MainMenu());
 	}
 
 	public static void ChangeScene(JPanel panel) {
-		frame = new JFrame("Game");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().removeAll();
 		
 		panel.setPreferredSize(new Dimension(500,500));
 		

@@ -54,19 +54,17 @@ public class MainMenu extends JPanel implements ActionListener, KeyListener {
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			if(selected > 0) {
 				selected -= 1;
-				System.out.print(selected);
 			}
 		}
 		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 			if(selected < 1) {
 				selected += 1;
-				System.out.print(selected);
 			}
 		}
 		if(e.getKeyCode() == KeyEvent.VK_E) {
 			switch(selected) {
 				case 0:
-					
+					Main.ChangeScene(new Game());
 					break;
 				case 1:
 					Main.frame.dispatchEvent(new WindowEvent(Main.frame, WindowEvent.WINDOW_CLOSING));
