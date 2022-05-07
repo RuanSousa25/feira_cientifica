@@ -8,7 +8,7 @@ import javax.swing.*;
 public class Main {
 	
 	public static JFrame frame;
-	
+	public static JPanel panel;
 	
 	public static void main(String[] args) {
 		frame = new JFrame("Game");
@@ -18,9 +18,14 @@ public class Main {
 	}
 
 	public static void ChangeScene(JPanel panel) {
-		frame.getContentPane().removeAll();
+		if(Main.panel != null) {
+			frame.remove(Main.panel);
+			frame.removeKeyListener((KeyListener) Main.panel);
+		}
 		
-		panel.setPreferredSize(new Dimension(500,500));
+		Main.panel = panel;
+		
+		panel.setPreferredSize(new Dimension(128 * 10,64 * 10));
 		
 		frame.add(panel);
 		frame.addKeyListener((KeyListener)panel);
