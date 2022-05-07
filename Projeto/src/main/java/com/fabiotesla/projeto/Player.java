@@ -1,8 +1,10 @@
 package com.fabiotesla.projeto;
 
+import Resources.GameSprites;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.Rectangle;
+import java.awt.image.ImageObserver;
 /**
  *
  * @author biog4
@@ -22,22 +24,15 @@ public class Player {
         Rectangle r = GetBounds();
         xvel = xacc;
         
-        if(r.x + xvel < 0 || r.x + r.width + xvel > 200){
-            if(r.x + Math.signum(xvel) > 0){
-                xpos += -(int)Math.signum(xvel);
-            }else{
-                xvel = 0;
-            }
-        }
         xpos += xvel;
     }
     
     public void KeyPressed(KeyEvent e){
         if(e.getKeyCode() == KeyEvent.VK_A){
-            xacc = -1;
+            xacc = -5;
         }
         if(e.getKeyCode() == KeyEvent.VK_D){
-            xacc = 1;
+            xacc = 5;
         }
     }
     public void KeyReleased(KeyEvent e){
@@ -46,11 +41,15 @@ public class Player {
         }
     }
     
-    public void Draw(Graphics g){
+    public void Draw(Graphics g,ImageObserver observer){
         Rectangle r = GetBounds();
         
         g.drawString(String.valueOf(xpos), 20, 10);
-        g.fillRect(r.x, r.y, r.width, r.height);
+        g.drawImage(GameSprites.GetSprite("Player"), xpos - (r.width / 2), ypos - (r.height / 2),r.width,r.height, observer);
+    }
+    
+    public boolean CheckCollision(Rectangle rect){
+        return GetBounds().intersects(rect);
     }
     
     public Rectangle GetBounds(){

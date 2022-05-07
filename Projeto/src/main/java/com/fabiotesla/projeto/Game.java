@@ -3,7 +3,7 @@ package com.fabiotesla.projeto;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
+import Resources.GameSprites;
 /**
  *
  * @author biog4
@@ -12,10 +12,13 @@ public class Game extends JPanel implements ActionListener, KeyListener{
 
     private Timer timer;
     public Scene CurrectScene;
+    private GameSprites Sprites;
     
     
     public Game(){
         CurrectScene = new Quarto();
+        
+        Sprites = new GameSprites();
         
         timer = new Timer(25,this);
         timer.start();
@@ -23,11 +26,12 @@ public class Game extends JPanel implements ActionListener, KeyListener{
     
     
     
+    
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         
-        if(CurrectScene != null) CurrectScene.Draw(g);
+        if(CurrectScene != null) CurrectScene.Draw(g,this);
         
         Toolkit.getDefaultToolkit().sync();
     }

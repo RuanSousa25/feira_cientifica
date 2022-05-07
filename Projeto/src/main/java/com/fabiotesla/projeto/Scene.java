@@ -15,7 +15,7 @@ import javax.imageio.ImageIO;
  */
 public interface Scene {
     
-    public void Draw(Graphics g);
+    public void Draw(Graphics g,ImageObserver observer);
     public void Tick();
     public void KeyPressed(KeyEvent e);
     public void KeyReleased(KeyEvent e);
