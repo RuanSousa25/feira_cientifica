@@ -11,7 +11,7 @@ public class FileLoader {
 	public static BufferedImage LoadImage(String Path) {
 		try 
 		{
-		    return ImageIO.read(new File("C:/ImageTest/pic2.jpg")); // eventually C:\\ImageTest\\pic2.jpg
+		    return ImageIO.read(new File(Path)); // eventually C:\\ImageTest\\pic2.jpg
 		} 
 		catch (IOException e) 
 		{

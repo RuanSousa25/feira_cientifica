@@ -12,6 +12,7 @@ public class Animation {
 	
 	public Animation(BufferedImage[] _sprites,int _speed) {
 		speed = _speed;
+		sprites = _sprites;
 	}
 	public BufferedImage[] sprites;
 	
@@ -22,8 +23,8 @@ public class Animation {
 		time += 1;
 		if(time > speed) {
 			NextFrame();
+			time = 0;
 		}
-		
 	}
 	
 	void NextFrame() {
