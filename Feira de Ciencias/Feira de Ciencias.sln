@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEngineBrid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Common.Runtime", "Unity.2D.Common.Runtime.csproj", "{A61F64D9-E585-69A3-1E50-CC0774489D13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B7AE20AC-05DF-9702-E6CE-7926AA6DCFFB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.TestRunner", "UnityEditor.TestRunner.csproj", "{27548EEA-2EC4-4DB4-518C-952E8445AD47}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{044949C5-5134-AE9E-CC57-FAFB28433B8E}"
@@ -83,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEngineBrid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Common.Runtime", "Unity.2D.Common.Runtime.Player.csproj", "{8B477846-D86C-B634-7DD3-9460844B886B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{82D33105-269C-DD0E-3434-6F7EDC596A07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,10 @@ Global
 		{A61F64D9-E585-69A3-1E50-CC0774489D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A61F64D9-E585-69A3-1E50-CC0774489D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A61F64D9-E585-69A3-1E50-CC0774489D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AE20AC-05DF-9702-E6CE-7926AA6DCFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AE20AC-05DF-9702-E6CE-7926AA6DCFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AE20AC-05DF-9702-E6CE-7926AA6DCFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AE20AC-05DF-9702-E6CE-7926AA6DCFFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{27548EEA-2EC4-4DB4-518C-952E8445AD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27548EEA-2EC4-4DB4-518C-952E8445AD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27548EEA-2EC4-4DB4-518C-952E8445AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -253,6 +261,10 @@ Global
 		{8B477846-D86C-B634-7DD3-9460844B886B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B477846-D86C-B634-7DD3-9460844B886B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B477846-D86C-B634-7DD3-9460844B886B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D33105-269C-DD0E-3434-6F7EDC596A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D33105-269C-DD0E-3434-6F7EDC596A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D33105-269C-DD0E-3434-6F7EDC596A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D33105-269C-DD0E-3434-6F7EDC596A07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
