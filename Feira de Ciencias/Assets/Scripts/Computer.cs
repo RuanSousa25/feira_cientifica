@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Computer : MonoBehaviour
 {
     public bool isBronken;
     public ParticleSystem smoke;
     public SpriteRenderer monitor;
-    public TextMesh displaytxt;
+    public TextMeshPro displaytxt;
     public Sprite workingsprite, bronkesprite;
 
     public static KeyCode[] keys = new KeyCode[]
@@ -30,7 +30,6 @@ public class Computer : MonoBehaviour
 
     void newkey()
     {
-        life -= 1;
         currectkey = keys[Random.Range(0, keys.Length - 1)];
     }
 
@@ -44,7 +43,12 @@ public class Computer : MonoBehaviour
         if (isBronken)
         {
             if (!smoke.isPlaying) smoke.Play();
-            if (Input.GetKeyDown(KeyCode.Space)) life += 5;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                GameManager.manager.AddPoints(5);
+                life += 5;
+                GetComponent<Animator>().Play("Fix", 0);
+            }
             if (life >= 200) isBronken = false;
         }
         else
@@ -57,9 +61,16 @@ public class Computer : MonoBehaviour
                 if(Input.GetKeyDown(k))
                 {
                     if (k == currectkey)
+                    {
                         newkey();
+                        GameManager.manager.AddPoints(200);
+                    }
                     else
+                    {
                         life -= 10;
+                        GetComponent<Animator>().Play("Error", 0);
+                        GameManager.manager.AddPoints(-100);
+                    }
                 }
             }
         }
