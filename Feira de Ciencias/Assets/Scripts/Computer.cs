@@ -26,11 +26,14 @@ public class Computer : MonoBehaviour
     {
         newkey();
         life = 200;
+        GameManager.manager.OnStateChanged += GameChangeState;
+
+        enabled = GameManager.manager.gameState == GameState.Gameplay;
     }
 
     void newkey()
     {
-        currectkey = keys[Random.Range(0, keys.Length - 1)];
+        currectkey = keys[Random.Range(0, keys.Length)];
     }
 
     void Update()
@@ -42,7 +45,7 @@ public class Computer : MonoBehaviour
 
         if (isBronken)
         {
-            if (!smoke.isPlaying) smoke.Play();
+            if (!smoke.isPlaying) smoke.Play(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 GameManager.manager.AddPoints(5);
@@ -53,7 +56,7 @@ public class Computer : MonoBehaviour
         }
         else
         {
-            if (smoke.isPlaying) smoke.Stop();
+            if (smoke.isPlaying) smoke.Stop(true);
             if (life <= 0) isBronken = true;
             displaytxt.text = currectkey.ToString();
             foreach (KeyCode k in keys)
@@ -62,6 +65,7 @@ public class Computer : MonoBehaviour
                 {
                     if (k == currectkey)
                     {
+                        life -= 1;
                         newkey();
                         GameManager.manager.AddPoints(200);
                     }
@@ -74,5 +78,10 @@ public class Computer : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void GameChangeState(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 }
