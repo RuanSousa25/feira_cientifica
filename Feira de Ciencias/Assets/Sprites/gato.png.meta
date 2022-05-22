@@ -174,9 +174,9 @@ TextureImporter:
       name: gato_3
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 111
-        width: 77
+        width: 83
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -200,7 +200,7 @@ TextureImporter:
         width: 83
         height: 41
       alignment: 9
-      pivot: {x: 0.46469393, y: 0.50000036}
+      pivot: {x: 0.51045537, y: 0.47684088}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
