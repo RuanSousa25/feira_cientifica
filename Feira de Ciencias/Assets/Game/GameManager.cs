@@ -100,13 +100,15 @@ public class GameManager : MonoBehaviour
 
         TMP_Text placeholder = NameField.placeholder as TMP_Text;
 
-        if (string.IsNullOrEmpty(NameField.text))
+
+        if (NameField.text.Contains(" "))
         {
-            placeholder.text = "O nome precisa ter 7 letras ou números";
+            placeholder.text = "O nome não pode conter espaços";
             placeholder.color = Color.red;
-        }else if (string.IsNullOrWhiteSpace(NameField.text))
+        }
+        else if(NameField.text.Length < 3)
         {
-            placeholder.text = "O nome precisa ter caracteres validos";
+            placeholder.text = "O nome precisa ter pelo menos 3 caracteres";
             placeholder.color = Color.red;
         }
         else
@@ -115,7 +117,8 @@ public class GameManager : MonoBehaviour
             StartCoroutine(SaveSystem.PostScores(SaveSystem.LoadData()));
             BackToMenu();
         }
-        
+
+        NameField.text = "";
     }
 
     public void BackToMenu()
