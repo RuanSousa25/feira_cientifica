@@ -1,0 +1,80 @@
+
+
+#cabecalho{
+    position: fixed;
+    top: 0%;
+    left: 0.8%;
+    width: 98%;
+    height: 15%;
+    background-color: #E9ECEA;
+    border-bottom: 3px solid #394648;
+    border-left: 3px solid #394648;
+    border-right: 3px solid #394648;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#navlinks{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -17%;
+    width: 50%;
+    left: 30%;
+    height: 90%;
+}
+.linknav{
+    position: relative;
+    background-color: #EC8609;
+    top: 10%;
+    width: 25%;
+    height: 70%;
+    text-align: center;  
+    border: 2px solid #710000;
+    border-radius: 15px;  
+}
+.link:link{
+    color: black;
+}
+.link:visited{
+    color: black;
+}
+.secao{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 35%;
+    background-color: #E9ECEA;
+    border: 3px solid #394648;
+    border-radius: 5px;
+}
+#leaderboard{
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 10%;
+    left: 60%;
+    width: 25%;
+    height: 80%;
+
+    background-color: #EC8609;
+    border: 2px solid #710000;
+}
+#leaderboardcont{
+    position: relative;
+    display: flex;
+    
+    align-content: flex-start;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    background-color: #394648;
+    border: 2px solid yellow;
+}
+.posrank{
+    position: relative;
+ 
+border: 1px solid black;
+}
