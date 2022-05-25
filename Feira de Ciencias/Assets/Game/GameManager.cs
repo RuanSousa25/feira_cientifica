@@ -115,7 +115,6 @@ public class GameManager : MonoBehaviour
         {
             SaveSystem.SaveData(NameField.text, Points);
             StartCoroutine(SaveSystem.PostScores(SaveSystem.LoadData()));
-            BackToMenu();
         }
 
         NameField.text = "";
@@ -136,13 +135,18 @@ public class GameManager : MonoBehaviour
     }
     public void AddPoints(int amount)
     {
-        TextMeshPro ft = Instantiate(floatingText).GetComponent<TextMeshPro>();
-        ft.text = amount > 0 ? "+" + amount : amount.ToString();
-        ft.color = amount > 0 ? Color.green : Color.red;
         Points += amount;
+        FloatText(amount > 0 ? "+" + amount : amount.ToString(), new Vector2(0.7f, -0.6f), amount > 0 ? Color.green : Color.red);
+        
+    }
+
+    public void FloatText(string text,Vector2 pos,Color c)
+    {
+        TextMeshPro ft = Instantiate(floatingText).GetComponent<TextMeshPro>();
+        ft.text = text;
+        ft.color = c;
+        ft.transform.position = pos;
 
         Destroy(ft.gameObject, 1.5f);
     }
-
-
 }

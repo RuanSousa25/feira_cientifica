@@ -47,6 +47,10 @@ public class Cat : MonoBehaviour
         if (!HasFood)
         {
             GameManager.manager.AddPoints(50);
+            if(Hungry <= 1)
+            {
+                AchievementsSystem.AddProgress(3);
+            }
             HasFood = true;
         }
             

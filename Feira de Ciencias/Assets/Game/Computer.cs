@@ -22,6 +22,8 @@ public class Computer : MonoBehaviour
     public KeyCode currectkey;
 
     public int life;
+    public int Combo;
+    public float lasttime;
 
     private void Start()
     {
@@ -60,7 +62,11 @@ public class Computer : MonoBehaviour
         else
         {
             if (smoke.isPlaying) smoke.Stop(true);
-            if (life <= 0) isBronken = true;
+            if (life <= 0)
+            {
+                AchievementsSystem.AddProgress(1);
+                isBronken = true;
+            }
             displaytxt.text = currectkey.ToString();
             nextdisplaytxt.text = nextkey.ToString();
             foreach (KeyCode k in keys)
@@ -69,11 +75,21 @@ public class Computer : MonoBehaviour
                 {
                     if (k == currectkey)
                     {
+
+                        if (Time.time - lasttime < 1.2f)
+                            Combo += 1;
+                        else
+                            Combo = 0;
+                        
+                        lasttime = Time.time;
+                        if (Combo > 1) GameManager.manager.FloatText(Combo.ToString(), new Vector2(Random.Range(-2.5f,-1.3f), 0), Color.yellow);
                         newkey();
                         GameManager.manager.AddPoints(200);
                     }
                     else
                     {
+                        Combo = 0;
+                        AchievementsSystem.AddProgress(2);
                         life -= 1;
                         GetComponent<Animator>().Play("Error", 0);
                         GameManager.manager.AddPoints(-100);
