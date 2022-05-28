@@ -1,123 +1,135 @@
-html{
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#logo{
-    width: 5em;
-    height: 5em;
-    background: none;
+#logo {
+  width: 5em;
+  height: 5em;
+  background: none;
 }
-header span{
-    position: absolute;
-    top: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center ;
-    width: 20%;
-    height: 90%;
-}
-
-body{
-    background-image: linear-gradient(to bottom, #cc794e, #ea9b6a);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+header span {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  height: 90%;
 }
 
-#cabecalho{
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 15%;
-    background-color: #286f6f;
-    border-bottom: 3px solid #394648;
-    z-index: 2000;
-
-}
-#navlinks{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    left: 40%;
-    height: 90%;
-
-}
-.linknav{
-    position: relative;
-    top: 10%;
-    width: 33%;
-    height: 70%;
-    text-align: center;  
-}
-.link{
-    font-size: 1em;
-}
-.link:link{
-    color: #f5f5f5;
-}
-.link:visited{
-    color: #f5f5f5;
-}
-.secao{
-    position: absolute;
-    width: 80%;
-    height: auto;
-    left: 10%;
-    top: 35%;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-}
-.secaocont{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: relative;
-    height: 50em;
-    width: 90%;
-    left: 5%;
-
-}
-.titulo{
-    font-size: 5em;
-    text-align: center;
-}
-.texto{
-    position: relative;
-    text-indent: 2em;
-    font-size: 1.5em;
-    text-align:left;
-}
-#leaderboard{
-    position: absolute;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 0%;
-    left: 60%;
-    width: 40%;
-    height: 500px;
-    background-color: #286f6f;
-
-}
-#leaderboard h4{
-    text-align: center;
-}
-#leaderboardcont{
-    position: relative;
-    display: flex;
-    overflow-y: auto;
-    align-content: flex-start;
-    flex-direction: column;
-    height: 70%;
-    width: 80%;
-    background-color: #0d4442;
+body {
+  background-image: linear-gradient(to bottom, #cc794e, #ea9b6a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.posrank{
-    position: relative;
- 
-border: 1px solid black;
+#cabecalho {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 15%;
+  background-color: #286f6f;
+  border-bottom: 3px solid #394648;
+  z-index: 2000;
+}
+#navlinks {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  left: 40%;
+  height: 90%;
+}
+.linknav {
+  position: relative;
+  top: 10%;
+  width: 33%;
+  height: 70%;
+  text-align: center;
+}
+.link {
+  font-size: 1em;
+}
+.link:link {
+  color: #f5f5f5;
+}
+.link:visited {
+  color: #f5f5f5;
+}
+.secao {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  left: 10%;
+  top: 35%;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+.secaocont {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  height: 50em;
+  width: 90%;
+  left: 5%;
+}
+.titulo {
+  font-size: 5em;
+  text-align: center;
+}
+.texto {
+  position: relative;
+  width: 48%;
+  text-indent: 2em;
+  font-size: 1.5em;
+  text-align: left;
+}
+#leaderboard {
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0%;
+  width: 48%;
+  height: 500px;
+  background-color: #286f6f;
+  color: #24e23a;
+}
+#leaderboard h1 {
+  text-align: center;
+}
+#leaderboard h3 {
+  position: absolute;
+  left: 1%;
+}
+#leaderboardcont {
+  position: relative;
+  display: flex;
+  overflow-y: auto;
+  align-content: flex-start;
+  flex-direction: column;
+  height: 70%;
+  width: 80%;
+  background-color: #0d4442;
+}
+
+.posrank {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+#posrank1 {
+  color: rgb(231, 172, 24);
+}
+#posrank2 {
+  color: rgb(214, 214, 214);
+}
+#posrank3 {
+  color: rgb(205, 127, 50);
 }
