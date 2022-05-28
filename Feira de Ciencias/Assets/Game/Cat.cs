@@ -46,6 +46,11 @@ public class Cat : MonoBehaviour
         if (Hungry > MinH) return;
         if (!HasFood)
         {
+
+            AchievementsSystem.AddProgress(9);
+            AchievementsSystem.AddProgress(10);
+            AchievementsSystem.AddProgress(11);
+            AchievementsSystem.AddProgress(12);
             GameManager.manager.AddPoints(50);
             if(Hungry <= 1)
             {

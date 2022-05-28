@@ -81,6 +81,28 @@ public class Computer : MonoBehaviour
                         else
                             Combo = 0;
                         
+                        
+                        if(Combo == 5)
+                        {
+                            AchievementsSystem.AddProgress(4);
+                        }
+                        else if (Combo == 10)
+                        {
+                            AchievementsSystem.AddProgress(5);
+                        }
+                        else if (Combo == 20)
+                        {
+                            AchievementsSystem.AddProgress(6);
+                        }
+                        else if (Combo == 30)
+                        {
+                            AchievementsSystem.AddProgress(7);
+                        }
+                        else if (Combo == 50)
+                        {
+                            AchievementsSystem.AddProgress(8);
+                        }
+
                         lasttime = Time.time;
                         if (Combo > 1) GameManager.manager.FloatText(Combo.ToString(), new Vector2(Random.Range(-2.5f,-1.3f), 0), Color.yellow);
                         newkey();

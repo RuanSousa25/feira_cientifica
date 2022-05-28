@@ -25,6 +25,18 @@ public class AchievementsSystem
         new Achievement{id = 1,title = "Quanta Fumaça!",desc = "Quebre o computador dez vezes.",MaxProgress = 10,currectProgress = 0 },
         new Achievement{id = 2,title = "Dedo escorregadio",desc = "Após errar a sequência 100 vezes.",MaxProgress = 100,currectProgress = 0 },
         new Achievement{id = 3,title = "Por pouco",desc = "Alimentou o gato no último segundo",MaxProgress = 100,currectProgress = 0 },
+
+        new Achievement{id = 4,title = "Progamador amador",desc = "5 acertos seguidos",MaxProgress = 1,currectProgress = 0},
+        new Achievement{id = 5,title = "Progamador intermediário",desc = "10 acertos seguidos",MaxProgress = 1,currectProgress = 0},
+        new Achievement{id = 6,title = "Progamador profissional",desc = "25 acertos seguidos",MaxProgress = 1,currectProgress = 0},
+        new Achievement{id = 7,title = "Rei da progamação",desc = "40 acertos seguidos",MaxProgress = 1,currectProgress = 0},
+        new Achievement{id = 8,title = "isso é real?",desc = "60 acertos seguidos",MaxProgress = 1,currectProgress = 0},
+
+        new Achievement{id = 9,title = "adimirador de gatos",desc = "alimente seu gato 10 vezes",MaxProgress = 10,currectProgress = 0},
+        new Achievement{id = 10,title = "amante de gatos",desc = "alimente seu gato 30 vezes",MaxProgress = 30,currectProgress = 0},
+        new Achievement{id = 11,title = "fanático por gatos",desc = "alimente seu gato 60 vezes",MaxProgress = 60,currectProgress = 0},
+        new Achievement{id = 12,title = "\"Desculpe, mas prefiro gatos\"",desc = "alimente seu gato 100 vezes",MaxProgress = 100,currectProgress = 0},
+
         //new Achievement{id = 4,title = "Por pouco",desc = "Alimentou o gato no último segundo",MaxProgress = 100,currectProgress = 0 },
     };
    
