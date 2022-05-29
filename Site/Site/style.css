@@ -1,0 +1,246 @@
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+  width: 5em;
+  height: 5em;
+  background: none;
+}
+header span {
+  top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  height: 90%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #cc794e, #ea9b6a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#cabecalho {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  min-height: 90px;
+  height: 15%;
+  background-color: #286f6f;
+  border-bottom: 3px solid #394648;
+  z-index: 2000;
+}
+#navlinks {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  height: 90%;
+}
+.linknav {
+  position: relative;
+  top: 20%;
+  width: 33%;
+  height: 70%;
+  text-align: center;
+}
+.link {
+  font-size: 100%;
+}
+.link:link {
+  color: #f5f5f5;
+}
+.link:visited {
+  color: #f5f5f5;
+}
+.secao {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  left: 10%;
+  top: 35%;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+.secaocont {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  width: 90%;
+  left: 5%;
+}
+.titulo {
+  font-size: 5em;
+  text-align: center;
+  min-width: 350px;
+}
+.texto {
+  min-width: 350px;
+  position: relative;
+  width: 48%;
+  text-indent: 2em;
+  font-size: 1.5em;
+  text-align: left;
+}
+.subtitulo {
+  text-align: center;
+}
+.leaderboard {
+  min-width: 350px;
+  position: relative;
+  top: 5%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 48%;
+  height: 500px;
+  background-color: #286f6f;
+  border: 3px solid #394648;
+  border-radius: 10px;
+  color: #24e23a;
+}
+.leaderboard h1 {
+  text-align: center;
+}
+.leaderboard h3 {
+  position: absolute;
+  left: 1%;
+}
+.leaderboardcont {
+  position: relative;
+  display: flex;
+  overflow-y: auto;
+  align-content: flex-start;
+  flex-direction: column;
+  height: 80%;
+  width: 90%;
+  background-color: #0d4442;
+}
+
+.posrank {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+#posrankpc1 {
+  color: rgb(231, 172, 24);
+}
+#posrankpc2 {
+  color: rgb(214, 214, 214);
+}
+#posrankpc3 {
+  color: rgb(205, 127, 50);
+}
+.placeholder {
+  width: 48%;
+  height: auto;
+}
+#posrankmob1 {
+  color: rgb(231, 172, 24);
+}
+#posrankmob2 {
+  color: rgb(214, 214, 214);
+}
+#posrankmob3 {
+  color: rgb(205, 127, 50);
+}
+#apresentacao {
+  text-indent: 5px;
+  text-shadow: 2px 2px 2px black;
+  display: flex;
+  color: #20c533;
+  background-color: #0d4442;
+  border: 2px solid #394648;
+  border-radius: 2px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+#imgs {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  height: auto;
+}
+#currentimg {
+  display: flex;
+  justify-content: space-around;
+  background-size: 100%;
+  width: 100%;
+  padding: calc(1 / 3.89 * 100%);
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #394648;
+}
+#sinopse {
+  width: 100%;
+}
+#downloadbts {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#downloadbts button a {
+  font-size: 2em;
+}
+.seta {
+  position: absolute;
+  padding: 10px;
+  box-shadow: 2px -2px 0 1px #000 inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;
+  top: 10%;
+}
+#seta1 {
+  transform: rotate(45deg);
+}
+#seta2 {
+  transform: rotate(225deg);
+}
+.setasbg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #757575;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+#setasbg1 {
+  left: -80%;
+}
+#setasbg2 {
+  left: 80%;
+}
+#formsugg {
+  width: 100%;
+}
+#commentspace {
+  width: 100%;
+  height: 100px;
+  text-align: start;
+}
+#secaocomments {
+  width: 100%;
+  height: 500px;
+  background-color: #c2c2c2;
+}
+.comment {
+  width: 100%;
+  height: 90px;
+  border: 2px solid red;
+}

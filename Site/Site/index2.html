@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homeware</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script2.js">
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="mostrarImg(); passarImg()">
+  <header id="cabecalho">
+    <span>
+      <img src="imagens/logo.png" id="logo"></img>
+      <h2>Homeware</h2>
+    </span>
+    <div id="navlinks">
+      <div class="linknav">
+        <a href="index.html" class="link">
+          <h3>Sobre o site</h3>
+        </a>
+
+      </div>
+      <div class="linknav">
+        <a href="index2.html" class="link">
+          <h3> Baixar o jogo</h3>
+        </a>
+      </div>
+      <div class="linknav">
+        <a href="index3.html" class="link">
+          <h3>Sugestões</h3>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="secao">
+    <h1 class="titulo"> Baixar HomeWare</h1>
+    <div class="secaocont">
+      <div id="apresentacao">
+        <div id="imgs">
+          <div id="currentimg">
+            <button onclick="prevImg()" class="setasbg" id="setasbg1">
+              <div id="seta1" class="seta"></div>
+            </button>
+            <button class="setasbg" id="setasbg2" onclick="nextImg()">
+              <div id="seta2" class="seta"></div>
+            </button>
+          </div>
+        </div>
+        <div id="sinopse">
+          <h1>O que é "HomeWare"?</h1>
+          <p>Homeware é um jogo desenvolvido para um trabalho científico e tem como objetivo representar a vida de profissionais da área da tecnologia da informação durante o isolamento decorrente da pandemia de Covid-19.<br>
+            Dentro do jogo, você é um profissional da TI que acaba de entrar para o Home Office e deve realizar o seu trabalho o mais rápido possível para ganhar pontos, enquanto também toma conta de outros afazeres, como alimentar seu gato ou consertar seu computador em caso de quebra.</p>
+        </div>
+        <br><br>
+        <div id="downloadbts">
+          <button>
+            <a href="jogo/HomewareSetup.exe" download>BAIXAR HOMEWARE<br>(Windows)</a>
+          </button>
+          <button>
+            <a href="jogo/Homeware.apk" download>BAIXAR HOMEWARE<br>(Android)</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+</body>
+
+</html>
