@@ -26,6 +26,7 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(SaveSystem.PostScores(data));
 
         AchievementsSystem.AddProgress(0);
+        AchievementsSystem.SaveAchievements();
 
         highscoredisplay.text = $"Seus maiores pontos:\n {data.points}";
 
