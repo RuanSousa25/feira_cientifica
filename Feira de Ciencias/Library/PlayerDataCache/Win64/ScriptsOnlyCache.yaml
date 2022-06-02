@@ -12,8 +12,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -88,41 +86,41 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11358}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11724}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 11866}
     - Class: 114
-      Script: {instanceID: 12040}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12376}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12592}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 13124}
+      Script: {instanceID: 13126}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13546}
+      Script: {instanceID: 13548}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 14306}
+      Script: {instanceID: 14308}
     - Class: 114
-      Script: {instanceID: 14432}
+      Script: {instanceID: 14434}
     - Class: 114
-      Script: {instanceID: 14850}
+      Script: {instanceID: 14852}
     - Class: 114
-      Script: {instanceID: 14970}
+      Script: {instanceID: 14972}
     - Class: 114
-      Script: {instanceID: 15176}
+      Script: {instanceID: 15178}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -173,43 +171,43 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11358}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11748}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 12008}
+      Script: {instanceID: 12010}
     - Class: 114
-      Script: {instanceID: 12018}
+      Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12396}
+      Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 12592}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 13024}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13484}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13682}
     - Class: 114
-      Script: {instanceID: 13932}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 13958}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14306}
+      Script: {instanceID: 14308}
     - Class: 114
-      Script: {instanceID: 14432}
+      Script: {instanceID: 14434}
     - Class: 114
-      Script: {instanceID: 14768}
+      Script: {instanceID: 14770}
     - Class: 114
-      Script: {instanceID: 15176}
+      Script: {instanceID: 15178}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -766,4 +764,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
   playerPath: C:/Users/biog4/OneDrive/Documentos/GITHUB/feira_cientifica/Feira de
-    Ciencias/build/HomeWare.exe
+    Ciencias/Dev_build/HomeWare.exe
