@@ -102,6 +102,7 @@ public class Computer : MonoBehaviour
                         {
                             AchievementsSystem.AddProgress(8);
                         }
+                        AchievementsSystem.SaveAchievements();
 
                         lasttime = Time.time;
                         if (Combo > 1) GameManager.manager.FloatText(Combo.ToString(), new Vector2(Random.Range(-2.5f,-1.3f), 0), Color.yellow);
@@ -112,6 +113,7 @@ public class Computer : MonoBehaviour
                     {
                         Combo = 0;
                         AchievementsSystem.AddProgress(2);
+                        AchievementsSystem.SaveAchievements();
                         life -= 1;
                         GetComponent<Animator>().Play("Error", 0);
                         GameManager.manager.AddPoints(-100);

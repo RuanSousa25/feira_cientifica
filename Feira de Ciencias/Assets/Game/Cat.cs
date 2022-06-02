@@ -51,11 +51,14 @@ public class Cat : MonoBehaviour
             AchievementsSystem.AddProgress(10);
             AchievementsSystem.AddProgress(11);
             AchievementsSystem.AddProgress(12);
+
             GameManager.manager.AddPoints(50);
             if(Hungry <= 1)
             {
                 AchievementsSystem.AddProgress(3);
             }
+
+            AchievementsSystem.SaveAchievements();
             HasFood = true;
         }
             

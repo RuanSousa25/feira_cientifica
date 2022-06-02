@@ -53,6 +53,8 @@ public class MenuManager : MonoBehaviour
         {
             bool completed = ac.currectProgress >= ac.MaxProgress;
 
+            Debug.Log($"Achiv:{ac.title} : {ac.currectProgress}/{ac.MaxProgress}");
+
             GameObject c = Instantiate(Achivobject, achivcontent);
 
             c.transform.Find("IsLock").gameObject.SetActive(!completed);

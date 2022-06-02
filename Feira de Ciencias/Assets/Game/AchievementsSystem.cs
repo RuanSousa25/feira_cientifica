@@ -24,7 +24,7 @@ public class AchievementsSystem
         new Achievement{id = 0,title = "Começando!",desc = "Primeira vez Jogando.",MaxProgress = 1,currectProgress = 0 },
         new Achievement{id = 1,title = "Quanta Fumaça!",desc = "Quebre o computador dez vezes.",MaxProgress = 10,currectProgress = 0 },
         new Achievement{id = 2,title = "Dedo escorregadio",desc = "Após errar a sequência 100 vezes.",MaxProgress = 100,currectProgress = 0 },
-        new Achievement{id = 3,title = "Por pouco",desc = "Alimentou o gato no último segundo",MaxProgress = 100,currectProgress = 0 },
+        new Achievement{id = 3,title = "Por pouco",desc = "Alimentou o gato no último segundo",MaxProgress = 1,currectProgress = 0 },
 
         new Achievement{id = 4,title = "Progamador amador",desc = "5 acertos seguidos",MaxProgress = 1,currectProgress = 0},
         new Achievement{id = 5,title = "Progamador intermediário",desc = "10 acertos seguidos",MaxProgress = 1,currectProgress = 0},
@@ -96,7 +96,6 @@ public class AchievementsSystem
                 if(a.currectProgress == a.MaxProgress)
                 {
                     AlertBox.instance.SendWarn($"Conquista desbloqueada: {a.title}");
-                    SaveAchievements();
                 }
             }
         }
